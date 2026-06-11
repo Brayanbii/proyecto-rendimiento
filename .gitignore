@@ -1,0 +1,16 @@
+Ignorar archivos temporales de Python
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+Ignorar base de datos local SQLite y variables de entorno
+
+instance/
+local.db
+.env

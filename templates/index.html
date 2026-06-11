@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerformanceApp - Inicio</title>
+    <!-- Tailwind CSS para diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col justify-between">
+    <!-- Barra de Navegación -->
+    <nav class="bg-indigo-600 text-white shadow-md p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">PerformanceApp</h1>
+            <div class="space-x-4">
+                <a href="/" class="hover:underline font-semibold">Inicio</a>
+                <a href="/registro" class="bg-indigo-800 hover:bg-indigo-900 px-4 py-2 rounded transition font-semibold">Registro y Consulta</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-4xl mx-auto my-12 px-6 flex-grow flex flex-col justify-center items-center text-center">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 max-w-2xl">
+            <div class="inline-block p-3 bg-indigo-100 text-indigo-600 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            </div>
+            <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Pruebas de Rendimiento de Software</h2>
+            <p class="text-slate-600 text-lg mb-8">
+                Bienvenido al panel principal de pruebas. Esta aplicación está lista para interactuar con bases de datos relacionales en la nube y soportar simulaciones de carga masiva de peticiones distribuidas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/registro" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3 rounded-lg shadow-lg hover:shadow-indigo-200 transition-all duration-200">
+                    Ir a Registro y Consulta (DB)
+                </a>
+                <a href="/api/usuarios" target="_blank" class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold px-6 py-3 rounded-lg transition-all">
+                    Ver API JSON de Usuarios
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-slate-800 text-slate-400 text-center py-4 border-t border-slate-700">
+        <p class="text-sm">&copy; 2026 Laboratorio de Pruebas de Rendimiento. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
